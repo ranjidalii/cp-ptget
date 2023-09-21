@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/workshee/cp-get/
+    - export DEPLOYPATH=/home/workshee/cp-ptget/
     - /bin/cp -R * $DEPLOYPATH
