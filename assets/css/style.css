@@ -732,7 +732,9 @@ section {
   content: "";
   display: block;
   position: absolute;
+  /* position: relative; */
   background: #164bde;
+  /* background-image: url(../img/about-1.png); */
   right: -60px;
   top: -40px;
   width: 100px;
@@ -744,12 +746,38 @@ section {
 
 .services .icon-box:hover::before {
   background: #164bde;
-  /* background-image: url(/assets/img/slide/A/1.png); */
+  /* background-image: url(../img/tumb-service/1-min.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
   right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   border-radius: 0px;
+}
+
+.services .tumb-serv-1:hover::before {
+  background-image: url(../img/tumb-service/1-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services .tumb-serv-2:hover::before {
+  background-image: url(../img/tumb-service/2-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services .tumb-serv-3:hover::before {
+  background-image: url(../img/tumb-service/3-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services .tumb-serv-4:hover::before {
+  background-image: url(../img/tumb-service/4-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services .icon {
@@ -786,6 +814,12 @@ section {
   margin-bottom: 0;
 }
 
+.services .icon-box:hover .title a {
+  -webkit-text-stroke: 0.5px black;
+  /* font-size: 20px; */
+  /* padding-top: 20px; */
+}
+
 .services .icon-box:hover .title a,
 .services .icon-box:hover .description {
   color: #fff;
@@ -796,7 +830,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #164bde;
+  color: #808080;
 }
 
 /*--------------------------------------------------------------
