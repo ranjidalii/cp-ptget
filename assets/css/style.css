@@ -975,64 +975,51 @@ section {
 --------------------------------------------------------------*/
 .customer {
   background: #fff;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
-.customer .member {
-  text-align: center;
-  background: #343a40;
-  position: relative;
+.customer .cust-1 {
   overflow: hidden;
-  padding: 0;
-  margin: 0;
+  padding: 20px 0;
+  background: #fff;
+  white-space: nowrap;
+  position: relative;
 }
 
-.customer .member img {
-  width: 100%;
-}
-
-.customer .member .member-info {
-  opacity: 0;
+.customer .cust-1:before,
+.customer .cust-1:after {
   position: absolute;
-  bottom: 0;
   top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
+  width: 100px;
+  height: 50px;
+  padding: 0 10px;
+  /* padding: 0 1rem; */
+  content: "";
+  z-index: 2;
 }
 
-.customer .member .member-info-content {
-  position: absolute;
+.customer .cust-1:before {
   left: 0;
-  right: 0;
-  bottom: 10px;
-  transition: bottom 0.4s;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
 }
 
-.customer .member .member-info-content h4 {
+.customer .cust-1:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.customer .cust-1:hover .cust-slide-1 {
+  animation-play-state: paused;
+}
+
+.customer .cust-slide-1 {
   display: inline-block;
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 20px;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 7px 10px;
+  animation: 30s slide infinite linear;
 }
 
-.customer .member:hover .member-info {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 35%,
-    rgba(0, 212, 255, 0) 100%
-  );
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.customer .member:hover .member-info-content {
-  bottom: 60px;
-  transition: bottom 0.4s;
+.customer .cust-slide-1 img {
+  height: 115px;
+  margin: 1rem 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1243,6 +1230,7 @@ section {
   background: #343a40;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .team .member .member-info {
@@ -1265,7 +1253,7 @@ section {
 
 .team .member .member-info-content h4 {
   font-weight: 700;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
   font-size: 18px;
   color: #fff;
 }
@@ -1315,7 +1303,7 @@ section {
 }
 
 .team .member:hover .member-info-content {
-  bottom: 60px;
+  bottom: 10px;
   transition: bottom 0.4s;
 }
 
