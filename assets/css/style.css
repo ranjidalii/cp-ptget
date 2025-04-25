@@ -780,6 +780,18 @@ section {
   background-repeat: no-repeat;
 }
 
+.services .tumb-serv-5:hover::before {
+  background-image: url(../img/tumb-service/5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services .tumb-serv-6:hover::before {
+  background-image: url(../img/tumb-service/6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
@@ -805,7 +817,8 @@ section {
 }
 
 .services .title a {
-  color: #425451;
+  color: #164bde;
+  /* color: #425451; */
 }
 
 .services .description {
@@ -815,9 +828,19 @@ section {
 }
 
 .services .icon-box:hover .title a {
-  -webkit-text-stroke: 0.5px black;
+  /* -webkit-text-stroke: 0.5px black; */
+  color: #fff;
   /* font-size: 20px; */
   /* padding-top: 20px; */
+}
+
+.services .title a:hover {
+  font-weight: 900;
+  font-style: italic;
+  color: greenyellow !important;
+  background-color: blue;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 .services .icon-box:hover .title a,
@@ -830,7 +853,8 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #808080;
+  /* color: #808080; */
+  color: #164bde;
 }
 
 /*--------------------------------------------------------------
@@ -1539,7 +1563,9 @@ section {
 .my_modal_1,
 .my_modal_2,
 .my_modal_3,
-.my_modal_4 {
+.my_modal_4,
+.my_modal_5,
+.my_modal_6 {
   display: none;
   position: fixed;
   z-index: 99997;
@@ -1555,7 +1581,9 @@ section {
 .my_modal_1 .modal-container,
 .my_modal_2 .modal-container,
 .my_modal_3 .modal-container,
-.my_modal_4 .modal-container {
+.my_modal_4 .modal-container,
+.my_modal_5 .modal-container,
+.my_modal_6 .modal-container {
   position: relative;
   /* background-image: url(/assets/img/slide/slide-1.jpg); */
   background-color: #fefefe;
@@ -1571,7 +1599,9 @@ section {
 .my_modal_1 .modal-container .close-icon,
 .my_modal_2 .modal-container .close-icon,
 .my_modal_3 .modal-container .close-icon,
-.my_modal_4 .modal-container .close-icon {
-  position: absolute;
+.my_modal_4 .modal-container .close-icon,
+.my_modal_5 .modal-container .close-icon,
+.my_modal_6 .modal-container .close-icon {
+  /* position: absolute; */
   right: 1rem;
 }
