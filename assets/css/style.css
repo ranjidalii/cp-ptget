@@ -1053,6 +1053,17 @@ section {
   margin-bottom: 30px;
 }
 
+/* add 25/04/25 */
+/* .portfolio .portfolio-item {
+  display: none;
+} */
+
+/* Menampilkan elemen yang sesuai dengan filter */
+/* .portfolio .portfolio-item.filter-elc {
+  display: block;
+} */
+/*  */
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
